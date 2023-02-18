@@ -187,6 +187,12 @@ update_configs:
       - match:
           dependency_name: "decode-uri-component"
           version_requirement: "0.2.2"
+      - match:
+          dependency_name: "http-cache-semantics"
+          version_requirement: "4.1.1"
+      - match:
+          dependency_name: "json5"
+          version_requirement: ["1.0.2", "2.2.3"]
   - package_manager: "java:maven"
     directory: "/"
     update_schedule: "daily"
@@ -197,3 +203,6 @@ update_configs:
       - match:
           dependency_name: "commons-io:commons-io"
           version_requirement: "2.7"
+      - match:
+          dependency_name: "org.keycloak:keycloak-core"
+          version_requirement: "20.0.3"
